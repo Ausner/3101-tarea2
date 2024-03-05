@@ -1,0 +1,27 @@
+<h1>{{heroe.nombre |uppercase}} <small>({{heroe.aparicion |date:'y'}})</small></h1>
+<hr>
+
+<div class="row">
+
+    <div class="col-md-4   animated fadeIn fast">
+
+        <img src="{{heroe.img}}" class="img-fluid" alt="{{heroe.nombre}}">
+        <br/><br/>
+        <a [routerLink]="['/heroes']" class="btn btn-outline-danger" style="width: 100%;">Regresar</a>
+    </div>
+    <div class="col-md-8    animated fadeIn">
+
+        <h3>{{heroe.nombre}}</h3>
+        <hr>
+        <p>{{heroe.bio}}</p>
+        <div>
+            <img src="{{ruta}}" alt="{{heroe.casa}}">
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
